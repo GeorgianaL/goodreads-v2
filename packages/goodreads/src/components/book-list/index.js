@@ -49,7 +49,7 @@ class BookList extends Component {
 
 function mapStateToProps(state) {
   const books = getBooks(state)
-  const { username, error } = state.auth
+  const { error } = state.auth
   const authenticated = error === null
   return { books, authenticated }
 }
